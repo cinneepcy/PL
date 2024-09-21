@@ -26,9 +26,9 @@ class Cat(Animal):
         
 a = Animal()
 a.sound()
-
+print("\n")
 d = Dog()
 d.sound()
-
+print("\n")
 c = Cat()
-c.sound(
+c.sound()
