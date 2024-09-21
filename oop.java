@@ -9,19 +9,36 @@ class Animal{
 
 class Dog extends Animal{
     public Dog(){
-        System.out.println("Create Dogs");
+        System.out.println("Create Dog");
     }
+    
+    @Override
     void sound(){
-        System.out.println("Dogs barks");
+        System.out.println("Dog barks");
     }
 }
+
+class Cat extends Animal{
+    public Cat(){
+        System.out.println("Create Cat");
+    }
+    
+    @Override
+    void sound(){
+        System.out.println("Cat meows");
+    }
+}
+
 
 public class oop{
     public static void main(String[] args) {
         Animal a = new Animal();
-        Dog d = new Dog();
-
         a.sound();
+
+        Dog d = new Dog();
         d.sound();
+
+        Cat c = new Cat();
+        c.sound();
     }
 }
